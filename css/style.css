@@ -125,6 +125,10 @@ body {
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .menu__title {
   font-size: 28px;
