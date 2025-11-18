@@ -34,6 +34,9 @@
   padding: 24px 120px;
   transition: all 250ms;
 }
+.alternative__image {
+  object-fit: cover;
+}
 .alternetive__text-title {
   font-size: 22px;
   color: #45563f;
