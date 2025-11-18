@@ -31,7 +31,7 @@
   /* border: 0.5px solid #45563f; */
   background-color: #e9e8da;
   border-radius: 10px;
-  padding: 24px 120px;
+  padding: 24px 60px;
   transition: all 250ms;
 }
 .alternative__image {
@@ -44,4 +44,9 @@
   /* margin-bottom: 20px; */
 }
 .selected-order__list {
+}
+@media (min-width: 768px) {
+  .order__alternative {
+    padding: 24px 100px;
+  }
 }
