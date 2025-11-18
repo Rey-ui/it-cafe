@@ -2,18 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/decor/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Їжа & тиша</title>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <img
-          src="./images/decor/logo.png"
-          alt="наше лого"
-          class="header__logo"
-        />
+        <div class="header__btn-container">
+          <img
+            src="./images/decor/logo.png"
+            alt="наше лого"
+            class="header__logo"
+          />
+          <a href="./favorites.html" class="header__btn">
+            Кошик<svg class="card__audio-svg" width="20" height="18">
+              <use href="./images/symbol-defs.svg#icon-cart"></use>
+            </svg>
+          </a>
+        </div>
+
         <img
           src="./images/decor/text-logo.png"
           alt="назва бренду"
@@ -22,28 +35,30 @@
         <img
           src="./images/decor/decor.png"
           alt="назва бренду"
-          class="header__decor"
+          class="header__decor-leaf"
         />
       </div>
     </header>
     <main class="main">
       <section class="hero-section">
-        <div class="container hero-container">
-          <h1 class="hero__title">
-            <span>ЇТ</span> — простір смаку та затишку
-          </h1>
-          <div class="hero__content">
-            <p class="hero__text">
-              Сучасна студентська їдальня у серці ДТЕУ. Натуральні страви,
-              збалансоване меню та тепла атмосфера для навчання, обіду й
-              короткого відпочинку.
-            </p>
-            <button class="hero__btn">
-              <svg class="hero__audio-svg" width="17" height="17">
-                <use href="./images/symbol-defs.svg#icon-volume-medium"></use>
-              </svg>
-              Прослухати
-            </button>
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero__title">
+              <span>ЇТ</span> — простір смаку та затишку
+            </h1>
+            <div class="hero__content">
+              <p class="hero__text">
+                Сучасна студентська їдальня у серці ДТЕУ. Натуральні страви,
+                збалансоване меню та тепла атмосфера для навчання, обіду й
+                короткого відпочинку.
+              </p>
+              <button class="hero__btn">
+                <svg class="hero__audio-svg" width="17" height="17">
+                  <use href="./images/symbol-defs.svg#icon-volume-medium"></use>
+                </svg>
+                Прослухати
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -59,8 +74,8 @@
                   class="header__decor"
                 />
               </h3>
-              <ul class="category__list">
-                <li class="category__item">
+              <ul class="category__list" data-category="main">
+                <!-- <li class="category__item">
                   <img
                     src="./images/dishes/chicken-in-cream-sauce.jpg"
                     alt="Куряче філе з травами"
@@ -152,7 +167,7 @@
                       </button>
                     </div>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </section>
             <section class="menu__item">
@@ -163,8 +178,8 @@
                   class="header__decor"
                 />
               </h3>
-              <ul class="category__list">
-                <li class="category__item">
+              <ul class="category__list" data-category="soups">
+                <!-- <li class="category__item">
                   <img
                     src="./images/dishes/cream-soup.jpg"
                     alt="Крем-суп з гарбуза"
@@ -225,15 +240,6 @@
                       </button>
                     </div>
                   </div>
-                </li>
-                <!-- <li class="category__item">
-                  <img src="" alt="" class="dish__image" />
-                  <div class="dish__description">
-                    <h4 class="dish__name"></h4>
-                    <p class="dish__text"></p>
-                    <span class="dish__price"></span>
-                  </div>
-                  <button class="dish__add">Вибрати</button>
                 </li> -->
               </ul>
             </section>
@@ -245,8 +251,8 @@
                   class="header__decor"
                 />
               </h3>
-              <ul class="category__list">
-                <li class="category__item">
+              <ul class="category__list" data-category="salads">
+                <!-- <li class="category__item">
                   <img
                     src="./images/dishes/green-salad.jpg"
                     alt="Салат зі свіжих овочів"
@@ -307,15 +313,6 @@
                       </button>
                     </div>
                   </div>
-                </li>
-                <!-- <li class="category__item">
-                  <img src="" alt="" class="dish__image" />
-                  <div class="dish__description">
-                    <h4 class="dish__name"></h4>
-                    <p class="dish__text"></p>
-                    <span class="dish__price"></span>
-                  </div>
-                  <button class="dish__add">Вибрати</button>
                 </li> -->
               </ul>
             </section>
@@ -327,8 +324,8 @@
                   class="header__decor"
                 />
               </h3>
-              <ul class="category__list">
-                <li class="category__item">
+              <ul class="category__list" data-category="drinks">
+                <!-- <li class="category__item">
                   <img
                     src="./images/dishes/capuchino.jpg"
                     alt="Капучино"
@@ -389,15 +386,6 @@
                       </button>
                     </div>
                   </div>
-                </li>
-                <!-- <li class="category__item">
-                  <img src="" alt="" class="dish__image" />
-                  <div class="dish__description">
-                    <h4 class="dish__name"></h4>
-                    <p class="dish__text"></p>
-                    <span class="dish__price"></span>
-                  </div>
-                  <button class="dish__add">Вибрати</button>
                 </li> -->
               </ul>
             </section>
@@ -409,8 +397,8 @@
                   class="header__decor"
                 />
               </h3>
-              <ul class="category__list">
-                <li class="category__item">
+              <ul class="category__list" data-category="deserts">
+                <!-- <li class="category__item">
                   <img
                     src="./images/dishes/sirnick.png"
                     alt="Сирник класичний"
@@ -471,15 +459,6 @@
                       </button>
                     </div>
                   </div>
-                </li>
-                <!-- <li class="category__item">
-                  <img src="" alt="" class="dish__image" />
-                  <div class="dish__description">
-                    <h4 class="dish__name"></h4>
-                    <p class="dish__text"></p>
-                    <span class="dish__price"></span>
-                  </div>
-                  <button class="dish__add">Вибрати</button>
                 </li> -->
               </ul>
             </section>
@@ -488,13 +467,50 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container header__container">
+      <div class="container footer__container">
         <img
           src="./images/decor/logo.png"
           alt="наше лого"
           class="header__logo"
         />
-        <img
+        <div class="footer__media-container">
+          <h3 class="footer__media-title">Соціальні мережі</h3>
+          <ul class="footer__media">
+            <li class="media__item">
+              <a href="#" class="media__link"
+                ><svg class="media__link-svg" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__link"
+                ><svg class="media__link-svg" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__link"
+                ><svg class="media__link-svg" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__contacts">
+          <h3 class="footer__contacts-title">Наша пошта</h3>
+          <a href="mailto:info@knute.edu.ua" class="footer__contacts-link"
+            ><svg class="footer__contacts-link-svg" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+            <span>info@knute.edu.ua</span>
+          </a>
+        </div>
+
+        <!-- <img
           src="./images/decor/text-logo.png"
           alt="назва бренду"
           class="header__text-logo"
@@ -503,8 +519,10 @@
           src="./images/decor/decor.png"
           alt="назва бренду"
           class="header__decor"
-        />
+        /> -->
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
