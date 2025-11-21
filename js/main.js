@@ -170,7 +170,7 @@ const menuItems = [
     calories: 330,
   },
 ];
-
+const LOCAL_KEY = "cart";
 const menuContainer = document.querySelector(".menu-container");
 const lists = {
   main: document.querySelector('[data-category="main"]'),
@@ -179,10 +179,16 @@ const lists = {
   drinks: document.querySelector('[data-category="drinks"]'),
   deserts: document.querySelector('[data-category="deserts"]'),
 };
+let addBtn;
+if (menuContainer) {
+  menuContainer.addEventListener("click", onDishClick);
+  renderMarkup();
+}
 
-menuContainer.addEventListener("click", onDishClick);
-renderMarkup();
-
+const favoritesItems = [];
+export function getCart() {
+  return JSON.parse(localStorage.getItem(LOCAL_KEY)) || [];
+}
 function handleEscapeKeyPress(event, instance) {
   if (event.code === "Escape") {
     instance.close();
@@ -274,6 +280,7 @@ function onDishClick(e) {
     {
       onShow: (instance) => {
         const btnClose = instance.element().querySelector(".close-btn");
+
         btnClose.addEventListener("click", () => {
           instance.close();
         });
@@ -289,8 +296,16 @@ function onDishClick(e) {
     }
   );
   instance.show();
+  addBtn = document.querySelector(".card__add");
+  if (addBtn) {
+    addBtn.addEventListener("click", () => addToCart(liItem));
+  }
 }
-
+function addToCart(item) {
+  const cart = getCart(); // отримуємо актуальні дані
+  cart.push(item);
+  localStorage.setItem(LOCAL_KEY, JSON.stringify(cart));
+}
 function renderMarkup() {
   for (const menuItem of menuItems) {
     lists[menuItem.category].insertAdjacentHTML(

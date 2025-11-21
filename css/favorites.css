@@ -44,9 +44,31 @@
   /* margin-bottom: 20px; */
 }
 .selected-order__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .order__alternative {
     padding: 24px 100px;
   }
+}
+.hidden {
+  display: none;
+}
+.dish__delete {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  background-color: #45563f;
+  color: #e9e8da;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 250ms;
 }
