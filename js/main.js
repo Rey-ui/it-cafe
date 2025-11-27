@@ -69,7 +69,7 @@ const menuItems = [
   {
     id: 5,
     category: "soupes",
-    src: "./images/dishes/chiken-soup.jpg",
+    src: "./images/dishes/chicken-bulion.png",
     alt: "Курячий бульйон",
     name: "Курячий бульйон",
     description:
@@ -84,7 +84,7 @@ const menuItems = [
   {
     id: 6,
     category: "salads",
-    src: "./images/dishes/green-salad.jpg",
+    src: "./images/dishes/fresh-salad.png",
     alt: "Салат зі свіжих овочів",
     name: "Салат зі свіжих овочів",
     description:
@@ -113,7 +113,7 @@ const menuItems = [
   },
   {
     id: 8,
-    category: "drinks",
+    category: "coffee",
     src: "./images/dishes/capuchino.jpg",
     alt: "Капучино",
     name: "Капучино",
@@ -169,6 +169,199 @@ const menuItems = [
     weight: "140 г",
     calories: 330,
   },
+  //new items
+  {
+    id: 12,
+    category: "drinks",
+    src: "./images/dishes/uzvar.png",
+    alt: "Узвар",
+    name: "Узвар",
+    description: "Традиційний український напій із сухофруктів.",
+    price: 25,
+    fullDescription: "Традиційний український напій із сухофруктів.",
+    ingredients: ["сухофрукти", "вода", "цукор"],
+    weight: "250 мл",
+    calories: 95,
+  },
+  {
+    id: 13,
+    category: "main",
+    src: "./images/dishes/fish-fele.png",
+    alt: "Рибне філе на пару",
+    name: "Рибне філе на пару",
+    description:
+      "Ніжне філе тріски, приготоване на парі без додавання жиру. Легке, дієтичне та корисне.",
+    price: 65,
+    fullDescription:
+      "Ніжне філе тріски, приготоване на парі без додавання жиру. Легке, дієтичне та корисне.",
+    ingredients: ["філе тріски", "лимонний сік", "зелень", "сіль"],
+    weight: "200 г",
+    calories: 190,
+  },
+  {
+    id: 14,
+    category: "drinks",
+    src: "./images/dishes/cumpot.png",
+    alt: "Компот",
+    name: "Компот",
+    description: "Традиційний український напій із сухофруктів.",
+    price: 25,
+    fullDescription: "Традиційний український напій із сухофруктів.",
+    ingredients: ["фрукти", "вода", "трішки цукру"],
+    weight: "250 мл",
+    calories: 90,
+  },
+  {
+    id: 15,
+    category: "main",
+    src: "./images/dishes/pure-potato.png",
+    alt: "Картопляне пюре",
+    name: "Картопляне пюре",
+    description:
+      "Ніжне класичне пюре з вершковим маслом. Легкий гарнір, що пасує до будь-якого м’яса.",
+    price: 39,
+    fullDescription:
+      "Ніжне класичне пюре з вершковим маслом. Легкий гарнір, що пасує до будь-якого м’яса.",
+    ingredients: ["картопля", "вершкове масло", "молоко", "сіль"],
+    weight: "180 г",
+    calories: 198,
+  },
+  {
+    id: 16,
+    category: "main",
+    src: "./images/dishes/cotleta-po-kievsky.png",
+    alt: "Котлета по-київськи",
+    name: "Котлета по-київськи",
+    description:
+      "Ніжне куряче м’ясо з вершковим маслом. Легкий гарнір, що пасує до будь-якого м’яса.",
+    price: 115,
+    fullDescription:
+      "Ніжне куряче м’ясо з вершковим маслом. Легкий гарнір, що пасує до будь-якого м’яса.",
+    ingredients: [
+      "куряче філе",
+      "вершкове масло",
+      "панірувальні сухарі",
+      "яйце",
+      "борошно",
+      "спеції",
+    ],
+    weight: "250 г",
+    calories: 688,
+  },
+  {
+    id: 17,
+    category: "salads",
+    src: "./images/dishes/cesar-salad.png",
+    alt: "Салат Цезар",
+    name: "Салат Цезар",
+    description:
+      "Класичний салат з курячим філе, листям салату, хрусткими грінками та соусом «Цезар».",
+    price: 72,
+    fullDescription:
+      "Класичний салат з курячим філе, листям салату, хрусткими грінками та соусом «Цезар».",
+    ingredients: [
+      "куряче філе",
+      "салат Ромен",
+      "грінки",
+      "соус «Цезар»",
+      "пармезан",
+    ],
+    weight: "300 г",
+    calories: 480,
+  },
+  {
+    id: 18,
+    category: "deserts",
+    src: "./images/dishes/apple-shtrudel.png",
+    alt: "Яблучний штрудель",
+    name: "Яблучний штрудель",
+    description:
+      "Теплий штрудель із яблуками, корицею та тонким хрустким тістом.",
+    price: 68,
+    fullDescription:
+      "Теплий штрудель із яблуками, корицею та тонким хрустким тістом.",
+    ingredients: ["тісто", "яблука", "кориця", "цукор"],
+    weight: "250 г",
+    calories: 550,
+  },
+  {
+    id: 19,
+    category: "coffee",
+    src: "./images/dishes/capuchino.png",
+    alt: "капучино",
+    name: "капучино",
+    description: "description - німа",
+    price: 45,
+    fullDescription: "fullDescription - німа",
+    ingredients: ["молочна піна", "еспресо"],
+    weight: "250 мл",
+    calories: 188,
+  },
+  {
+    id: 20,
+    category: "coffee",
+    src: "./images/dishes/americanchik.png",
+    alt: "Американо",
+    name: "Американо",
+    description: "description - німа",
+    price: 38,
+    fullDescription: "fullDescription - німа",
+    ingredients: ["O", "__", "O"],
+    weight: "180 мл",
+    calories: 4,
+  },
+  {
+    id: 21,
+    category: "coffee",
+    src: "./images/dishes/latte.png",
+    alt: "Лате",
+    name: "Лате",
+    description: "description - німа",
+    price: 45,
+    fullDescription: "fullDescription - німа",
+    ingredients: ["еспресо", "молоко"],
+    weight: "250 мл",
+    calories: 150,
+  },
+  {
+    id: 22,
+    category: "applications",
+    src: "./images/dishes/bread.png",
+    alt: "Хліб",
+    name: "Хліб",
+    description: "білий / житній",
+    price: 10,
+    fullDescription: "-",
+    ingredients: ["мука"],
+    weight: "40 г",
+    calories: 120,
+  },
+  {
+    id: 23,
+    category: "applications",
+    src: "./images/dishes/suhariki.png",
+    alt: "Грінки часникові",
+    name: "Грінки часникові",
+    description: "-",
+    price: 18,
+    fullDescription: "-",
+    ingredients: ["хліб", "часник", "олія"],
+    weight: "50 г",
+    calories: 175,
+  },
+  {
+    id: 24,
+    category: "applications",
+    src: "./images/dishes/souces.png",
+    alt: "Соуси",
+    name: "Соуси",
+    description: "йогуртовий, кетчуп, майонез, гірчиця",
+    price: 45,
+    fullDescription: "-",
+    ingredients: ["O", "__", "O"],
+    weight: "30 г",
+    calories: 60,
+  },
 ];
 const LOCAL_KEY = "cart";
 const menuContainer = document.querySelector(".menu-container");
@@ -178,14 +371,16 @@ const lists = {
   salads: document.querySelector('[data-category="salads"]'),
   drinks: document.querySelector('[data-category="drinks"]'),
   deserts: document.querySelector('[data-category="deserts"]'),
+  coffee: document.querySelector('[data-category="coffee"]'),
+  applications: document.querySelector('[data-category="applications"]'),
 };
 let addBtn;
 if (menuContainer) {
   menuContainer.addEventListener("click", onDishClick);
+  menuContainer.addEventListener("click", renderMarkupCategory);
   renderMarkup();
 }
 
-const favoritesItems = [];
 export function getCart() {
   return JSON.parse(localStorage.getItem(LOCAL_KEY)) || [];
 }
@@ -302,7 +497,7 @@ function onDishClick(e) {
   }
 }
 function addToCart(item) {
-  const cart = getCart(); // отримуємо актуальні дані
+  const cart = getCart();
   cart.push(item);
   localStorage.setItem(LOCAL_KEY, JSON.stringify(cart));
 }
@@ -314,7 +509,17 @@ function renderMarkup() {
     );
   }
 }
+function renderMarkupCategory(e) {
+  const categoryTitle = e.target.closest(".menu__category-title");
+  if (!categoryTitle) return;
 
+  const list = categoryTitle.nextElementSibling;
+  const category = list.dataset.category;
+  console.log(category);
+  // const liItem = menuItems.find(({ id }) => {
+  //   return id === idItem;
+  // });
+}
 function createCardMurkap({
   id,
   category,
