@@ -287,19 +287,6 @@ const menuItems = [
   {
     id: 19,
     category: "coffee",
-    src: "./images/dishes/capuchino.png",
-    alt: "капучино",
-    name: "капучино",
-    description: "-",
-    price: 45,
-    fullDescription: "-",
-    ingredients: ["молочна піна", "еспресо"],
-    weight: "250 мл",
-    calories: 188,
-  },
-  {
-    id: 20,
-    category: "coffee",
     src: "./images/dishes/americanchik.png",
     alt: "Американо",
     name: "Американо",
@@ -311,7 +298,7 @@ const menuItems = [
     calories: 4,
   },
   {
-    id: 21,
+    id: 20,
     category: "coffee",
     src: "./images/dishes/latte.png",
     alt: "Лате",
@@ -324,7 +311,7 @@ const menuItems = [
     calories: 150,
   },
   {
-    id: 22,
+    id: 21,
     category: "applications",
     src: "./images/dishes/bread.png",
     alt: "Хліб",
@@ -337,7 +324,7 @@ const menuItems = [
     calories: 120,
   },
   {
-    id: 23,
+    id: 22,
     category: "applications",
     src: "./images/dishes/suhariki.png",
     alt: "Грінки часникові",
@@ -350,7 +337,7 @@ const menuItems = [
     calories: 175,
   },
   {
-    id: 24,
+    id: 23,
     category: "applications",
     src: "./images/dishes/souces.png",
     alt: "Соуси",
