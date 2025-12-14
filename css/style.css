@@ -137,14 +137,17 @@ body {
   font-size: 22px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 13px;
   color: #45563f;
   background-color: #e9e8da;
   border: 0.5px solid #45563f;
   border-radius: 20px;
   padding: 12px 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
+
 .category__list {
   display: flex;
   flex-wrap: wrap;
